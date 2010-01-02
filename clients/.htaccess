@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access for /clients" 
+AuthUserFile /kunden/homepages/30/d197942504/htpasswd
+require user clients

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>AlphaContent</name>
+	<author>Bernard Gilly</author>
+	<creationDate>2009 September 23</creationDate>
+	<copyright>Copyright (C) 2005 - 2009 Bernard Gilly - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>www.alphaplug.com</authorUrl>
+	<version>4.0.12</version>
+	<description>Provides Google maps link, report listing link and ajax rating bar - You can enabled this plugin on all content, not just with AlphaContent. This plugin can works without menu created and linked to AlphaContent, but the component must be installed first.</description>
+	<files>
+		<filename plugin="alphacontent">alphacontent.php</filename>
+	</files>
+	<params>
+		<param name="enabled" type="radio" default="0" label="Enable Plugin" description="Enabled plugin rating on entire site (AlphaContent + all content articles, blog etc...)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showonintro" type="radio" default="0" label="Show on intro" description="Show also on intro and blog view if plugin enabled on entire site">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="excludeID" type="text" default="" size="" Label="Exclude content ID" description="Exclude specific content items for not display rating bar and sharethis widget (to specify more than one article, seperate with a comma , )." />
+	</params>
+</install>

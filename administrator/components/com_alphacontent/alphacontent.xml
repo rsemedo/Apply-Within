@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>AlphaContent</name>
+	<creationDate>2009 10 17</creationDate>
+	<author>Bernard Gilly</author>
+	<authorEmail>http://www.alphaplug.com</authorEmail>
+	<authorUrl>http://www.alphaplug.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2009 Bernard Gilly - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>4.0.13</version>
+	<description><![CDATA[Provide a Directory Structure for content, weblinks and contact components.]]></description>	
+	<files folder="frontend">
+		<filename>index.html</filename>
+		<filename>alphacontent.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/alphacontent/index.html</filename>
+		<filename>views/alphacontent/view.html.php</filename>
+		<filename>views/alphacontent/metadata.xml</filename>
+		<filename>views/alphacontent/tmpl/index.html</filename>
+		<filename>views/alphacontent/tmpl/default.php</filename>
+		<filename>views/alphacontent/tmpl/default.xml</filename>		
+		<filename>views/alphacontent/tmpl/default_report.php</filename>		
+		<filename>models/index.html</filename>
+		<filename>models/alphacontent.php</filename>
+		<filename>models/listing.php</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/alphacontent.css</filename>		
+		<filename>assets/css/rating.css</filename>		
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/hot_en-gb.gif</filename>		
+		<filename>assets/images/new_en-gb.gif</filename>
+		<filename>assets/images/hot_fr-fr.gif</filename>		
+		<filename>assets/images/new_fr-fr.gif</filename>		
+		<filename>assets/images/hot_de-de.gif</filename>
+		<filename>assets/images/new_de-de.gif</filename>
+    <filename>assets/images/hot_nl-nl.gif</filename>	
+		<filename>assets/images/new_nl-nl.gif</filename>		
+		<filename>assets/images/starrating.gif</filename>
+		<filename>assets/images/linkpic_shadow.gif</filename>		
+		<filename>assets/images/working.gif</filename>
+		<filename>assets/images/rss.png</filename>
+		<filename>assets/includes/index.html</filename>
+		<filename>assets/includes/alphacontent.db.php</filename>
+		<filename>assets/includes/alphacontent.drawrating.php</filename>
+		<filename>assets/includes/alphacontent.functions.php</filename>
+		<filename>assets/includes/alphacontent.google_map.php</filename>
+		<filename>assets/includes/alphacontent.rpc.php</filename>		
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/arc90_linkthumb.js</filename>
+		<filename>assets/js/behavior.js</filename>
+		<filename>assets/js/rating.js</filename>
+	</files>	
+	<languages folder="languages-front">
+		<language tag="en-GB">en-GB/en-GB.com_alphacontent.ini</language>
+		<language tag="">fr-FR/fr-FR.com_alphacontent.ini</language>
+		<language tag="">fi-FI/fi-FI.com_alphacontent.ini</language>
+		<language tag="">ru-RU/ru-RU.com_alphacontent.ini</language>
+		<language tag="">tr-TR/tr-TR.com_alphacontent.ini</language>		
+		<language tag="">nl-NL/nl-NL.com_alphacontent.ini</language>
+		<language tag="">zh-CN/zh-CN.com_alphacontent.ini</language>
+		<language tag="">zh-TW/zh-TW.com_alphacontent.ini</language>
+    <language tag="">it-IT/it-IT.com_alphacontent.ini</language>
+    <language tag="">de-DE/de-DE.com_alphacontent.ini</language>
+    <language tag="">pt-PT/pt-PT.com_alphacontent.ini</language>
+    <language tag="">ro-RO/ro-RO.com_alphacontent.ini</language>
+    <language tag="">sv-SE/sv-SE.com_alphacontent.ini</language>
+    <language tag="">pt-BR/pt-BR.com_alphacontent.ini</language>
+    <language tag="">nb-NO/nb-NO.com_alphacontent.ini</language>
+    <language tag="">hu-HU/hu-HU.com_alphacontent.ini</language>        
+	</languages>
+	<installfile>install.alphacontent.php</installfile>
+	<uninstallfile>uninstall.alphacontent.php</uninstallfile>	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8" >install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu>AlphaContent</menu>		
+		<files folder="backend">
+			<filename>index.html</filename>
+			<filename>admin.alphacontent.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>CHANGELOG.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>views/index.html</filename>
+			<filename>views/alphacontent/index.html</filename>
+			<filename>views/alphacontent/view.html.php</filename>
+			<filename>views/alphacontent/tmpl/index.html</filename>
+			<filename>views/alphacontent/tmpl/default.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/alphacontent.php</filename>
+			<filename>models/upgrade.php</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/alphacontent.jpg</filename>
+			<filename>assets/images/alphacontent_icon.png</filename>			
+			<filename>assets/images/Paypal_DonateButton.gif</filename>
+      <filename>assets/images/btn_donateCC_LG.gif</filename>      		
+			<filename>assets/includes/index.html</filename>
+			<filename>assets/includes/version.php</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.alphacontent.html</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/fr-FR/index.html</filename>
+			<filename>help/fr-FR/screen.alphacontent.html</filename>
+			<filename>help/fr-FR/css/index.html</filename>
+			<filename>help/fr-FR/css/help.css</filename>
+			<filename>configuration/index.html</filename>
+			<filename writable="yes">configuration/configuration.php</filename>
+			<filename>install/index.html</filename>
+			<filename>install/plugins/index.html</filename>
+			<filename>install/plugins/plugin_content/index.html</filename>
+			<filename>install/plugins/plugin_content/alphacontent.php</filename>
+			<filename>install/plugins/plugin_content/alphacontent.xml</filename>			
+			<filename>install/plugins/plugin_system/index.html</filename>
+      <filename>install/plugins/plugin_system/alphacontentsys.xml</filename>
+      <filename>install/plugins/plugin_system/alphacontentsys.php</filename>          		
+		</files>		
+		<languages folder="languages-admin">
+			<language tag="en-GB">en-GB/en-GB.com_alphacontent.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_alphacontent.menu.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphacontent.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphacontent.menu.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphacontent.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphacontent.menu.ini</language>	      	
+			<language tag="">ru-RU/ru-RU.com_alphacontent.ini</language>
+			<language tag="">ru-RU/ru-RU.com_alphacontent.menu.ini</language>	      
+      <language tag="">tr-TR/tr-TR.com_alphacontent.ini</language>
+			<language tag="">tr-TR/tr-TR.com_alphacontent.menu.ini</language>
+      <language tag="">nl-NL/nl-NL.com_alphacontent.ini</language>
+			<language tag="">nl-NL/nl-NL.com_alphacontent.menu.ini</language>        	
+		</languages>
+	</administration>
+</install>

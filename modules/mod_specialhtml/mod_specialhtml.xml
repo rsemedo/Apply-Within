@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Special HTML</name>
+  <author>Rony S Y Zebua - Member of camp26.biz</author>
+  <creationDate>03 February 2009</creationDate>
+  <copyright>2008-2009, www.camp26.biz</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>ronysyz@gmail.com</authorEmail>
+  <authorUrl>www.camp26.biz</authorUrl>
+  <version>1.2</version>
+  <description>MODULE : SPECIALHTML</description>
+	<files>
+		<filename module="mod_specialhtml">mod_specialhtml.php</filename>
+		<filename>index.html</filename>
+    	<filename>helper.php</filename>
+    	<filename>tmpl/default.php</filename>
+    	<filename>tmpl/index.html</filename>
+		<filename>logo.png</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_specialhtml.ini</language>
+	</languages>
+    <params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A Suffix to be applied the CSS class of this module, this allowa indivdual nodule styling" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="code_area" type="textarea" default="" label="HTML/JavaScript" cols="40" rows="20" description="Insert special Html or Javascript Here. I.e: Ads Code, Another code" />
+  		<param name="userlevel" type="radio" default="1" label="This Module Show To: " description="This module show to" >
+			<option value="0">Registered Only</option>
+			<option value="1">All Visitor</option>
+			<option value="2">Guest Only</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="clean_js" type="list" default="1" label="Clean JS" description="Clean all JavaScript of HTML Line Breaks">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="clean_css" type="list" default="1" label="Clean CSS" description="Clean all Inlined CSS of HTML Line Breaks">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="clean_all" type="list" default="1" label="Clean HTML" description="Clean all HTML of Line Breaks. This may help if you are getting odd empty verticle space in your HTML output.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+  </params>
+  <params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

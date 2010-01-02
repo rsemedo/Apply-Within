@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>AlphaContentSys</name>
+	<author>Bernard Gilly</author>
+	<creationDate>2009 September 23</creationDate>
+	<copyright>Copyright (C) 2005 - 2009 Bernard Gilly - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>www.alphaplug.com</authorUrl>
+	<version>4.0.12</version>
+	<description>This plugin set the Itemid on article.</description>
+	<files>
+		<filename plugin="alphacontentsys">alphacontentsys.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

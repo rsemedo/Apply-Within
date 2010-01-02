@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+	<name>Recommend</name>
+	<creationDate>September 2006</creationDate>
+	<author>Emir Sakic</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorEmail>saka@hotmail.com</authorEmail>
+	<authorUrl>www.sakic.net</authorUrl>
+	<version>2.4</version>
+	<description>Lets visitors recommend your site to friends.</description>
+	<files>
+		<filename>recommend.php</filename>
+		<filename>sef_ext.php</filename>
+		<filename>lang/bosnian.php</filename>
+		<filename>lang/dutch.php</filename>
+		<filename>lang/english.php</filename>
+		<filename>lang/french.php</filename>
+		<filename>lang/germanf.php</filename>
+		<filename>lang/germani.php</filename>
+		<filename>lang/hungarian.php</filename>
+		<filename>lang/spanish.php</filename>
+	</files>
+	<administration>
+		<menu>Recommend</menu>
+		<submenu>
+			<menu act="sub1">Info</menu>
+		</submenu>
+		<files>
+			<filename>admin.recommend.php</filename>
+			<filename>readme.txt</filename>
+		</files>
+	</administration>
+</mosinstall>
